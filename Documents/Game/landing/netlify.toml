@@ -4,3 +4,10 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# ✅ fallback offline
+[[redirects]]
+  from = "/*"
+  to = "/offline.html"
+  status = 200
+  force = true
